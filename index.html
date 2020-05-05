@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+  <div class="Form">
+    <p>Registration</p>
+    <form id="forma">
+      <div class="f-group">
+        <input  id="name" type="text" placeholder="Name" onKeyUp="if(/[^a-zA-Zа .]/i.test(this.value)){this.value='';}"/>
+        <label for="name">Name</label>
+        <img  class="success" id="first" alt="">
+      </div>
+
+      <div class="f-group">
+        <input  id="surname" type="text" placeholder="Surname" onKeyUp="if(/[^a-zA-Zа .]/i.test(this.value)){this.value='';}"/>
+        <label for="surname">Surname</label>
+        <img  class="success" id="second" alt="">
+      </div>
+      <div ></div>
+
+      <div class="f-group">
+        <input  id="login" type="text" placeholder="Login"/>
+        <label for="login">Mail</label>
+        <img class="success" id="third" alt="">
+      </div>
+      <div class="f-group">
+        <input  id="pass" type="text" placeholder="Password"/>
+        <label for="pass">Password</label>
+        <img class="success" id="fourth" alt="">
+      </div>
+
+      <p><button class="button" type="button" name="" value="Submit" onclick="Element()">Submit</button></p>
+    </form>
+  </div>
+  <script src="code.js"> </script>
+</body>
+</html>
